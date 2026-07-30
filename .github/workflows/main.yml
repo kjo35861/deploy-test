@@ -26,7 +26,6 @@ jobs:
 
       - name: "세번째 작업"
         run: |
-          cd ~/
           ls
 
 
