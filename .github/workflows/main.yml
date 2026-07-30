@@ -1,1 +1,24 @@
+name: deploy-study
+
+on:
+  push:
+    branches: [main]
+  pull_request: 
+    branches: [main]
+
+jobs:
+  run1: 
+    runs-on: ubuntu-24.04
+    steps:
+      - name: "첫번째 작업"
+        run: echo "출력!!!!"
+      - name: "두번째 작업"
+        run: |
+          cd ~/
+          ls
+          mkdir test-item
+          ls
+
+
+
 
