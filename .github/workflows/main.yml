@@ -19,6 +19,14 @@ jobs:
           mkdir test-item
           ls
 
+      - name: Checkout
+        uses: actions/checkout@v6.1.0
+        with:
+          ref: main
 
+      - name: "세번째 작업"
+        run: |
+          cd ~/
+          ls
 
 
